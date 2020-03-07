@@ -1,0 +1,35 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "start:prod": "npm run build && node build/server.js",
+    "build": "rm -rf ./build && tsc"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Chandan Rauniyar",
+    "email": "chandankkrr@gmail.com",
+    "url": "https://chandankkrr.github.io"
+  },
+  "homepage": "https://github.com/Chandankkrr/graphql-where-have-you-been-server",
+  "repository": {
+    "url": "https://github.com/Chandankkrr/graphql-where-have-you-been-server",
+    "type": "git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/node": "^13.9.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.6.0"
+  }
+}
